@@ -45,9 +45,20 @@ module.exports = {
                     use: [{
                         loader: 'css-loader',
                         options: {
+                            minimize: true,
                             sourceMap: true,
                             modules: true,
                             localIdentName:'[name]__[local]___[hash:base64:5]'
+                        }
+                    },
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            plugins: function() {
+                                return [
+                                    require('autoprefixer')
+                                ]
+                            }
                         }
                     },
                     'sass-loader',
