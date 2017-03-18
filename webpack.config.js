@@ -19,7 +19,7 @@ module.exports = {
         filename: 'app.min.js'
     },
     plugins: [
-        new ExtractTextPlugin('app.css'),
+        new ExtractTextPlugin('app.min.css'),
         HtmlWebpackPluginConfig
     ],
     module: {
@@ -56,7 +56,8 @@ module.exports = {
                         options: {
                             plugins: function() {
                                 return [
-                                    require('autoprefixer')
+                                    require('autoprefixer'),
+                                    require('postcss-css-reset'),
                                 ]
                             }
                         }
