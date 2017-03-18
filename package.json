@@ -1,33 +1,43 @@
 {
-  "name": "mywork",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "webpack-dev-server --hot",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "axios": "^0.15.3",
-    "babel-core": "^6.24.0",
-    "babel-loader": "^6.4.1",
-    "babel-preset-latest": "^6.24.0",
-    "babel-preset-react": "^6.23.0",
-    "babel-preset-stage-3": "^6.22.0",
-    "css-loader": "^0.27.3",
-    "extract-text-webpack-plugin": "^2.1.0",
-    "html-webpack-plugin": "^2.28.0",
-    "node-sass": "^4.5.0",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2",
-    "react-redux": "^5.0.3",
-    "redux": "^3.6.0",
-    "redux-thunk": "^2.2.0",
-    "sass-loader": "^6.0.3",
-    "style-loader": "^0.14.1",
-    "webpack": "^2.2.1",
-    "webpack-dev-server": "^2.4.2"
-  }
+    "name": "mywork",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "webpack-dev-server --hot",
+        "test": "jest"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "axios": "^0.15.3",
+        "babel-core": "^6.24.0",
+        "babel-loader": "^6.4.1",
+        "babel-preset-latest": "^6.24.0",
+        "babel-preset-react": "^6.23.0",
+        "babel-preset-stage-3": "^6.22.0",
+        "css-loader": "^0.27.3",
+        "enzyme": "^2.7.1",
+        "extract-text-webpack-plugin": "^2.1.0",
+        "html-webpack-plugin": "^2.28.0",
+        "jest": "^19.0.2",
+        "node-sass": "^4.5.0",
+        "react": "^15.4.2",
+        "react-dom": "^15.4.2",
+        "react-redux": "^5.0.3",
+        "redux": "^3.6.0",
+        "redux-thunk": "^2.2.0",
+        "sass-loader": "^6.0.3",
+        "style-loader": "^0.14.1",
+        "webpack": "^2.2.1",
+        "webpack-dev-server": "^2.4.2"
+    },
+    "jest": {
+        "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+        "unmockedModulePathPatterns": [
+            "react",
+            "react-dom",
+            "enzyme"
+        ]
+    }
 }
