@@ -5,13 +5,13 @@
     src: url('./olivier.ttf');
 }
 
-@mixin h2 {
+@mixin h2($color: white) {
     font-family: 'Montserrat', sans-serif;
     font-size: 52px;
     line-height: 62px;
     font-weight: 700;
     text-transform: uppercase;
-    color: white;
+    color: $color;
     margin-bottom: 40px;
 }
 
@@ -27,6 +27,10 @@
     font-family: 'Olivier';
     font-size: 52px;
     line-height: 62px;
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 0.85);
     text-transform: capitalize;
+}
+
+@mixin container {
+    max-width: 1100px;
 }

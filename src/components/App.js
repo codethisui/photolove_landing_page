@@ -5,6 +5,7 @@ import reducers from '../reducers';
 import ReduxThunk from 'redux-thunk';
 
 import Header from './Header';
+import AppFeatures from './AppFeatures';
 
 import styles from './styles/app.scss';
 
@@ -16,6 +17,7 @@ export default class App extends React.Component {
             <Provider store={store}>
                 <div className={styles.app}>
                     <Header />
+                    <AppFeatures />
                 </div>
             </Provider>
         );
