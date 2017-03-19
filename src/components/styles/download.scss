@@ -24,6 +24,7 @@ $orange: rgba(245, 81, 80, 1);
 
     h2 {
         @include h2(rgba(138, 138, 138, 1));
+        color: white;
 
         .orange {
             color: $orange;
