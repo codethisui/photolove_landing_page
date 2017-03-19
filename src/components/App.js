@@ -6,6 +6,7 @@ import ReduxThunk from 'redux-thunk';
 
 import Header from './Header';
 import AppFeatures from './AppFeatures';
+import Download from './Download';
 
 import styles from './styles/app.scss';
 
@@ -18,6 +19,7 @@ export default class App extends React.Component {
                 <div className={styles.app}>
                     <Header />
                     <AppFeatures />
+                    <Download />
                 </div>
             </Provider>
         );

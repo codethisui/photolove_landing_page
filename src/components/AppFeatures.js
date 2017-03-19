@@ -4,7 +4,7 @@ import feature1 from './assets/feature1.png';
 import feature2 from './assets/feature2.png';
 import feature3 from './assets/feature3.png';
 
-const Header = (props) => {
+const AppFeatures = (props) => {
     return (
         <div className={styles.appFeatures}>
             <div className={styles.container}>
@@ -35,5 +35,4 @@ const Header = (props) => {
 
     );
 }
-
-export default Header;
+export default AppFeatures;

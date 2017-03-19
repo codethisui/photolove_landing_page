@@ -1,0 +1,60 @@
+@import 'mixins';
+
+.download {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+    background-image: url('../assets/face.png');
+    background-size: cover;
+    background-position: center;
+}
+.container {
+    @include container;
+}
+
+$button_color: rgba(217, 51, 45, 1);
+$orange: rgba(245, 81, 80, 1);
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 200px 0;
+
+    h2 {
+        @include h2(rgba(138, 138, 138, 1));
+
+        .orange {
+            color: $orange;
+        }
+    }
+
+    p {
+        color: rgba(58, 58, 58, 1);
+        padding-right: 300px;
+        padding-bottom: 50px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 100;
+        text-align: left;
+        font-size: 22px;
+        line-height: 30px;
+    }
+    button {
+        margin-right: auto;
+        padding: 15px 25px;
+        background-color: $button_color;
+        border: 0;
+        border-radius: 50px;
+        color: white;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        cursor: pointer;
+        transition: all 0.25s;
+
+        &:hover {
+            background-color: $orange;
+        }
+    }
+}
