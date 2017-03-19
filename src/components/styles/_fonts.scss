@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:100,300,400");
+
+@font-face {
+    font-family: Olivier;
+    src: url('./olivier.ttf');
+}
+
+@mixin h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 52px;
+    line-height: 62px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 40px;
+}
+
+@mixin ctaThin {
+    font-size: 36px;
+    line-height: 43px;
+    color: white;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+
+@mixin logo {
+    font-family: 'Olivier';
+    font-size: 52px;
+    line-height: 62px;
+    color: white;
+    text-transform: capitalize;
+}

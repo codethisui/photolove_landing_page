@@ -14,10 +14,8 @@ export default class App extends React.Component {
     render() {
         return (
             <Provider store={store}>
-                <div className={styles.container}>
-                    <div className={styles.app}>
-                        <Header />
-                    </div>
+                <div className={styles.app}>
+                    <Header />
                 </div>
             </Provider>
         );
